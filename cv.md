@@ -20,6 +20,8 @@ function maxTriSum(numbers){
   return numSort.sort((a,b) => b - a).slice(0, 3).reduce((sum, accum) => sum + accum)
 }
 ```
+## Experience 
+This is my first site where I used HTML, SASS, Slick slider library and some JavaScript: [https://stellar-gumption-91e651.netlify.app/](https://stellar-gumption-91e651.netlify.app/)
 ## Education
 * JavaScript Manual on [learnjavascript.ru](learnjavascript.ru) (in progress)
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
