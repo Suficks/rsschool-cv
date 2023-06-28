@@ -25,4 +25,6 @@ function maxTriSum(numbers){
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 * 'Basics of working with Git' from Yandex.Practice
 * **University:** St. Petersburg Chemical and Pharmaceutical University, Biotechnology
-
+## Languages 
+* Russian - native speaker
+* English - intermediate
