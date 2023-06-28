@@ -13,10 +13,16 @@ I am 23 years old and I decided to change my profession to one that is really in
 * Git/GitHub
 * VS Code
 ## Code Examples
-**Maximum Triplet Sum KATA from CODEWARS:**Given an array/list [] of n integers , find maximum triplet sum in the array Without duplications.
+**Maximum Triplet Sum KATA from CODEWARS:** Given an array/list [] of n integers , find maximum triplet sum in the array Without duplications.
 ```
 function maxTriSum(numbers){
   let numSort = Array.from(new Set(numbers))
   return numSort.sort((a,b) => b - a).slice(0, 3).reduce((sum, accum) => sum + accum)
 }
 ```
+## Education
+* JavaScript Manual on [learnjavascript.ru](learnjavascript.ru) (in progress)
+* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+* 'Basics of working with Git' from Yandex.Practice
+* **University:** St. Petersburg Chemical and Pharmaceutical University, Biotechnology
+
