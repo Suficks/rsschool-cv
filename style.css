@@ -19,6 +19,7 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -53,12 +54,10 @@ a {
   font-weight: 700;
 }
 
-.layer {
-  width: 100%;
-  height: 100%;
-  background: #042F57;
+.header {
+  max-width: 1440px;
+  margin: auto;
 }
-
 .header .wrapper {
   margin: auto;
 }
@@ -82,14 +81,22 @@ a {
 }
 
 .main-container {
+  position: relative;
   max-width: 1440px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5px;
+  padding: 5px;
+  z-index: 1;
 }
 .main-container .left-container {
   width: 40%;
+}
+@media (max-width: 768px) {
+  .main-container .left-container {
+    width: 100%;
+  }
 }
 .main-container .left-container .profile .content {
   text-align: center;
@@ -113,69 +120,85 @@ a {
   text-transform: uppercase;
   color: #656565;
 }
-.main-container .contacts .contacts-list {
+.main-container .left-container .contacts .contacts-list {
   list-style: none;
 }
-.main-container .contacts .contacts-link {
+.main-container .left-container .contacts .contacts-link {
   color: #042F57;
   transition: 0.2s ease;
 }
-.main-container .contacts .contacts-link:hover {
+.main-container .left-container .contacts .contacts-link:hover {
   text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
 }
-.main-container .summary .info {
+.main-container .left-container .summary .info {
   padding: 0 30px 0 25px;
   margin: 0;
 }
-.main-container .skills .skills-list {
+.main-container .left-container .skills .skills-list {
   margin-left: 15px;
 }
-
-.right-container {
+.main-container .right-container {
   width: 60%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.right-container .code {
+.main-container .right-container .code {
   margin-bottom: 25px;
 }
-.right-container .code .subtitle {
+.main-container .right-container .code .subtitle {
   padding-left: 25px;
   margin: 0 0 15px;
 }
-.right-container .code pre {
-  margin: 0;
+.main-container .right-container .code .code-example {
+  margin: 15px;
   padding-left: 25px;
+  background-color: #d8e8ee;
 }
-.right-container .experience {
+.main-container .right-container .code pre {
+  margin: 0;
+}
+.main-container .right-container .experience {
   margin-bottom: 25px;
 }
-.right-container .experience .info {
+.main-container .right-container .experience .info {
   margin: 0 0 10px;
   padding-left: 25px;
 }
-.right-container .experience .experience-link {
+.main-container .right-container .experience .experience-link {
   margin-left: 40px;
   padding: 10px;
   color: #042F57;
 }
-.right-container .experience .experience-link:hover {
+.main-container .right-container .experience .experience-link:hover {
   text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
 }
-.right-container .education {
+.main-container .right-container .education {
   margin-bottom: 25px;
 }
-.right-container .education .item {
+.main-container .right-container .education .item {
   margin: 15px;
 }
-.right-container .education .link {
+.main-container .right-container .education .link {
   color: #042F57;
 }
-.right-container .education .link:hover {
+.main-container .right-container .education .link:hover {
   text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
 }
-.right-container .languages .lang-list {
+.main-container .right-container .languages .lang-list {
   padding-left: 25px;
 }
-.right-container .languages .lang {
+.main-container .right-container .languages .lang {
   margin: 10px;
+}
+.main-container .right-container .languages .lang-skill {
+  padding-left: 35px;
+  margin: 9px 0;
+}
+.main-container .footer {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .footer .year {
+  color: #042F57;
 }/*# sourceMappingURL=style.css.map */
