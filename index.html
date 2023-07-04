@@ -89,13 +89,16 @@
       <section class="code" id="code">
         <h2 class="title">Code Examples</h2>
         <p class="subtitle"><span class="bold">Maximum Triplet Sum KATA from CODEWARS: </span>Given an array/list [] of
-          n integers , find maximum triplet sum in the array Without duplications.</p>
+          n integers, find maximum triplet sum in the array Without duplications.</p>
         <div class="code-example"> 
-          <code class="code-view"><pre>function maxTriSum(numbers){
-          let numSort = Array.from(new Set(numbers))
-          return numSort.sort((a,b) => b - a).slice(0, 3).reduce((sum, accum) 
-          => sum + accum)
-          }</pre></code>
+          <code class="code-view"><pre>
+function maxTriSum(numbers){
+  let numSort = Array.from(new Set(numbers))
+  return numSort.sort((a,b) => b - a)
+  .slice(0, 3)
+  .reduce((sum, accum) 
+  => sum + accum)
+}</pre></code>
         </div>
       </section>
 
@@ -103,7 +106,7 @@
         <h2 class="title">Experience</h2>
         <p class="info">This is my first site where I used HTML, SASS, Slick slider library and some JavaScript:</p>
         <a class="experience-link"
-          href="https://stellar-gumption-91e651.netlify.app/">https://stellar-gumption-91e651.netlify.app/</a>
+          href="https://lawyeranisimova.netlify.app/">Lawyer Anisimova</a>
       </section>
 
       <section class="education" id="education">
