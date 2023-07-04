@@ -93,6 +93,8 @@ a {
     justify-content: space-between;
     align-items: center;
 
+    padding-left: 25px;
+
     list-style: none;
   }
 
@@ -104,7 +106,7 @@ a {
     transition: 0.3s ease;
 
     &:hover {
-      color: #5CCCCC;
+      color: #45c9c9;
     }
   }
 }
@@ -163,6 +165,15 @@ a {
     .contacts {
       .contacts-list {
         list-style: none;
+      }
+
+      .contacts-block {
+        display: flex;
+        align-items: center;
+      }
+
+      .contacts-pic {
+        margin-right: 5px;
       }
 
       .contacts-link {
@@ -267,11 +278,16 @@ a {
   }
 
   .footer {
-    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    
+    width: 40%;
+
+    padding-left: 25px;
+
+    box-sizing: border-box;
+    
    .year {
     color: #042F57;
    }
