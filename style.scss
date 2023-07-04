@@ -22,7 +22,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
 
@@ -57,6 +57,10 @@ a {
   }
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .layer {
   width: 100%;
   height: 100%;
@@ -81,8 +85,9 @@ a {
   }
 
   .nav-link {
-    color: #042F57;
     font-weight: 600;
+    font-size: 16px;
+    color: #042F57;
 
     transition: 0.3s ease;
 
@@ -140,24 +145,20 @@ a {
       list-style: none;
     }
   
-    .bold {
-      font-weight: 700;
-    }
-  
     .contacts-link {
-      color: black;
+      color: #042F57;
   
       transition: 0.2s ease;
   
       &:hover {
-        text-shadow: 0 0 0.5px black, 0 0 0.5px black;
+        text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
       }
     }
   }
 
   .summary {
     .info {
-      padding-left: 25px;
+      padding: 0 30px 0 25px;
       margin: 0;
     }
   }
@@ -167,28 +168,51 @@ a {
       margin-left: 15px;
     }
   }
-
 }
 
 .right-container {
   width: 60%;
-  box-shadow: #656565;
-  
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
   .code {
     .subtitle {
       padding-left: 25px;
       margin: 0 0 15px;
     }
 
-    .bold {
-      font-weight: 700;
-    }
-
     pre {
       margin: 0;
       padding-left: 25px;
+
+    }
+  }
+
+  .experience {
+    .info {
+      margin: 0 0 10px;
+      padding-left: 25px;
+    }
+
+    .experience-link {
+      margin-left: 40px;
+      padding: 10px;
+
+      color: #042F57;
+
+      &:hover {
+        text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
+      }
+    }
+  }
+
+  .education {
+    .item {
+      margin: 15px;
     }
   }
 }
+
+
+
 
 
