@@ -135,6 +135,9 @@ a {
   width: 60%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+.right-container .code {
+  margin-bottom: 25px;
+}
 .right-container .code .subtitle {
   padding-left: 25px;
   margin: 0 0 15px;
@@ -142,6 +145,9 @@ a {
 .right-container .code pre {
   margin: 0;
   padding-left: 25px;
+}
+.right-container .experience {
+  margin-bottom: 25px;
 }
 .right-container .experience .info {
   margin: 0 0 10px;
@@ -155,6 +161,21 @@ a {
 .right-container .experience .experience-link:hover {
   text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
 }
+.right-container .education {
+  margin-bottom: 25px;
+}
 .right-container .education .item {
   margin: 15px;
+}
+.right-container .education .link {
+  color: #042F57;
+}
+.right-container .education .link:hover {
+  text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
+}
+.right-container .languages .lang-list {
+  padding-left: 25px;
+}
+.right-container .languages .lang {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

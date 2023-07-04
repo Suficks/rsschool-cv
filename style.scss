@@ -175,6 +175,8 @@ a {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
   .code {
+    margin-bottom: 25px;
+
     .subtitle {
       padding-left: 25px;
       margin: 0 0 15px;
@@ -188,6 +190,8 @@ a {
   }
 
   .experience {
+    margin-bottom: 25px;
+
     .info {
       margin: 0 0 10px;
       padding-left: 25px;
@@ -206,8 +210,28 @@ a {
   }
 
   .education {
+    margin-bottom: 25px;
+
     .item {
       margin: 15px;
+    }
+
+    .link {
+      color: #042F57;
+
+      &:hover {
+        text-shadow: 0 0 0.5px #5CCCCC, 0 0 0.5px #5CCCCC;
+      }
+    }
+  }
+
+  .languages {
+    .lang-list {
+      padding-left: 25px;
+    }
+
+    .lang {
+      margin: 10px;
     }
   }
 }
