@@ -55,7 +55,7 @@ a {
   background: #042F57;
 }
 
-.header .container {
+.header .wrapper {
   margin: auto;
 }
 .header .nav {
@@ -77,27 +77,30 @@ a {
 }
 
 .main-container {
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 40%;
+  justify-content: space-between;
   margin: 5px;
 }
-.main-container .profile .content {
+.main-container .left-container {
+  width: 40%;
+}
+.main-container .left-container .profile .content {
   text-align: center;
 }
-.main-container .profile .photo-pic {
+.main-container .left-container .profile .photo-pic {
   border-radius: 100%;
   border: 5px solid #656565;
 }
-.main-container .profile .profile-title {
+.main-container .left-container .profile .profile-title {
   margin: 15px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
 }
-.main-container .profile .subtitle {
+.main-container .left-container .profile .subtitle {
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
@@ -124,4 +127,20 @@ a {
 }
 .main-container .skills .skills-list {
   margin-left: 15px;
+}
+
+.right-container {
+  width: 60%;
+  box-shadow: #656565;
+}
+.right-container .code .subtitle {
+  padding-left: 25px;
+  margin: 0 0 15px;
+}
+.right-container .code .bold {
+  font-weight: 700;
+}
+.right-container .code pre {
+  margin: 0;
+  padding-left: 25px;
 }/*# sourceMappingURL=style.css.map */

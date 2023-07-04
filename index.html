@@ -13,14 +13,14 @@
 <body>
   <div class="layer"></div>
   <header class="header">
-    <div class="container">
+    <div class="wrapper">
       <nav class="nav">
         <ul class="nav-list">
           <li class="item"><a href="#contacts" class="nav-link">Contacts</a></li>
           <li class="item"><a href="#summary" class="nav-link">About Me</a></li>
           <li class="item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="item"><a href="#code" class="nav-link">Code Examples</a></li>
-          <li class="item"><a href="" class="nav-link">Experience</a></li>
+          <li class="item"><a href="#experience" class="nav-link">Experience</a></li>
           <li class="item"><a href="" class="nav-link">Education</a></li>
           <li class="item"><a href="" class="nav-link">Languages</a></li>
         </ul>
@@ -29,56 +29,66 @@
   </header>
 
   <div class="main-container">
-    <section class="profile">
-      <div class="content">
-        <img src="./assets/photo_Suficks-round.png" alt="Photo" class="photo-pic">
-        <div class="info">
-          <h1 class="profile-title">Sofia Vdovichenko</h1>
-          <p class="subtitle">Junior frontend developer</p>
+    <div class="left-container">
+      <section class="profile">
+        <div class="content">
+          <img src="./assets/photo_Suficks-round.png" alt="Photo" class="photo-pic">
+          <div class="info">
+            <h1 class="profile-title">Sofia Vdovichenko</h1>
+            <p class="subtitle">Junior frontend developer</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contacts" id="contacts">
-      <h2 class="title">Contacts</h2>
-      <ul class="contacts-list">
-        <li class="item"><span class="bold">Location: </span>Saint-Petersburg</li>
-        <li class="item"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83" class="contacts-link">8-999-527-69-83</a></li>
-        <li class="item"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru" class="contacts-link">vdo-sofia@mail.ru</a></li>
-        <li class="item"><span class="bold">Github: </span><a href="https://github.com/Suficks" class="contacts-link">Sofia Vdovichenko</a></li>
-        <li class="item"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ " class="contacts-link">Suficks#3918</a></li>
-      </ul>
-    </section>
-
-    <section class="summary" id="summary">
-      <h2 class="title">About Me</h2>
-      <p class="info">I am 23 years old and I decided to change my profession to one that is really interesting to me. I study front-end development diligently and carefully in order to become a real specialist in the future. I have already laid out a couple of sites and this is just the beginning!</p>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2 class="title">Skills</h2>
-      <ul class="skills-list">
-        <li class="item">HTML</li>
-        <li class="item">CSS/SASS</li>
-        <li class="item">JavaScript(Basic)</li>
-        <li class="item">Git/GitHub</li>
-        <li class="item">VS Code</li>
-      </ul>
-    </section>
-  </div>
-
-  <section class="code" id="code">
-    <h2 class="title">Code Examples</h2>
-    
-  </section>
+      </section>
   
+      <section class="contacts" id="contacts">
+        <h2 class="title">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="item"><span class="bold">Location: </span>Saint-Petersburg</li>
+          <li class="item"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83" class="contacts-link">8-999-527-69-83</a></li>
+          <li class="item"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru" class="contacts-link">vdo-sofia@mail.ru</a></li>
+          <li class="item"><span class="bold">Github: </span><a href="https://github.com/Suficks" class="contacts-link">Sofia Vdovichenko</a></li>
+          <li class="item"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ " class="contacts-link">Suficks#3918</a></li>
+        </ul>
+      </section>
+  
+      <section class="summary" id="summary">
+        <h2 class="title">About Me</h2>
+        <p class="info">I am 23 years old and I decided to change my profession to one that is really interesting to me. I study front-end development diligently and carefully in order to become a real specialist in the future. I have already laid out a couple of sites and this is just the beginning!</p>
+      </section>
+  
+      <section class="skills" id="skills">
+        <h2 class="title">Skills</h2>
+        <ul class="skills-list">
+          <li class="item">HTML</li>
+          <li class="item">CSS/SASS</li>
+          <li class="item">JavaScript(Basic)</li>
+          <li class="item">Git/GitHub</li>
+          <li class="item">VS Code</li>
+        </ul>
+      </section>
+    </div>
 
+    <div class="right-container">
+      <section class="code" id="code">
+        <h2 class="title">Code Examples</h2>
+        <p class="subtitle"><span class="bold">Maximum Triplet Sum KATA from CODEWARS: </span>Given an array/list [] of n integers , find maximum triplet sum in the array Without duplications.</p>
+        <code class="code-example"><pre>function maxTriSum(numbers){
+          let numSort = Array.from(new Set(numbers))
+          return numSort.sort((a,b) => b - a).slice(0, 3).reduce((sum, accum) => sum + accum)
+          }</pre></code>
+      </section>
+  
+      <section class="experience" id="experience">
+        <h2 class="title">Experience</h2>
+        <p class="info">This is my first site where I used HTML, SASS, Slick slider library and some JavaScript:</p>
+        <a href="https://stellar-gumption-91e651.netlify.app/">https://stellar-gumption-91e651.netlify.app/</a>
+      </section>
+    </div>
 
-
+  </div>
 
 
 
 
 </body>
-
 </html>

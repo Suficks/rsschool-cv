@@ -64,7 +64,7 @@ a {
 }
 
 .header {
-  .container {
+  .wrapper {
     margin: auto;
   }
 
@@ -93,40 +93,45 @@ a {
 }
 
 .main-container {
+  max-width: 1440px;
+
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  width: 40%;
+  justify-content: space-between;
 
   margin: 5px;
 
-  .profile {
-    .content {
-      text-align: center;
-    }
-  
-    .photo-pic {
-      border-radius: 100%;
-      border: 5px solid #656565;
-    }
-  
-    .profile-title {
-      margin: 15px;
-  
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 800;
-      text-transform: uppercase;
-    }
-  
-    .subtitle {
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 600;
-      letter-spacing: 0.45px;
-      text-transform: uppercase;
+  .left-container {
+    width: 40%;
 
-      color: #656565;
+    .profile {
+      .content {
+        text-align: center;
+      }
+    
+      .photo-pic {
+        border-radius: 100%;
+        border: 5px solid #656565;
+      }
+    
+      .profile-title {
+        margin: 15px;
+    
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+    
+      .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        letter-spacing: 0.45px;
+        text-transform: uppercase;
+  
+        color: #656565;
+      }
     }
   }
 
@@ -162,7 +167,28 @@ a {
       margin-left: 15px;
     }
   }
+
 }
 
+.right-container {
+  width: 60%;
+  box-shadow: #656565;
+  
+  .code {
+    .subtitle {
+      padding-left: 25px;
+      margin: 0 0 15px;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    pre {
+      margin: 0;
+      padding-left: 25px;
+    }
+  }
+}
 
 
