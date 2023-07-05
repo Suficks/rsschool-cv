@@ -93,7 +93,8 @@
         <div class="code-example"> 
           <code class="code-view"><pre>
 function maxTriSum(numbers){
-  let numSort = Array.from(new Set(numbers))
+  let numSort = 
+  Array.from(new Set(numbers))
   return numSort.sort((a,b) => b - a)
   .slice(0, 3)
   .reduce((sum, accum) 

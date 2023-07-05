@@ -67,27 +67,31 @@ a {
   max-width: 1440px;
   margin: auto;
 }
-.header .wrapper {
+
+.wrapper {
   margin: auto;
   margin-bottom: 40px;
 }
-.header .nav {
+
+.nav {
   max-width: 800px;
 }
-.header .nav-list {
+
+.nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 25px;
   list-style: none;
 }
-.header .nav-link {
+
+.nav-link {
   font-weight: 600;
   font-size: 16px;
   color: #042F57;
   transition: 0.3s ease;
 }
-.header .nav-link:hover {
+.nav-link:hover {
   color: #45c9c9;
 }
 
@@ -109,6 +113,14 @@ a {
 .profile {
   margin-bottom: 55px;
 }
+.profile .subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  color: #656565;
+}
 
 .content {
   text-align: center;
@@ -125,15 +137,6 @@ a {
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-.subtitle {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  letter-spacing: 0.45px;
-  text-transform: uppercase;
-  color: #656565;
 }
 
 .contacts {
@@ -191,8 +194,7 @@ a {
 .code {
   margin-bottom: 55px;
 }
-
-.subtitle {
+.code .subtitle {
   padding-left: 25px;
   margin: 0 0 15px;
 }
@@ -228,8 +230,7 @@ pre {
 .education {
   margin-bottom: 55px;
 }
-
-.item {
+.education .item {
   margin: 15px;
 }
 
@@ -266,6 +267,11 @@ pre {
   color: #042F57;
 }
 
+@media (max-width: 1150px) {
+  .nav {
+    max-width: 700px;
+  }
+}
 @media (max-width: 1024px) {
   .main-container {
     flex-direction: column;
@@ -273,5 +279,55 @@ pre {
   }
   .layer {
     width: 250px;
+  }
+  .footer {
+    width: 45%;
+  }
+}
+@media (max-width: 960px) {
+  .layer {
+    width: 200px;
+  }
+  .code-example {
+    font-size: 16px;
+  }
+  .footer {
+    text-align: center;
+    justify-content: inherit;
+  }
+}
+@media (max-width: 750px) {
+  .layer {
+    width: 145px;
+  }
+  .photo-pic {
+    max-width: 250px;
+  }
+  .code-example {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 630px) {
+  .code-example {
+    font-size: 12px;
+  }
+}
+@media (max-width: 605px) {
+  .layer {
+    width: 120px;
+  }
+  .profile-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .profile .subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 565px) {
+  .layer {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
