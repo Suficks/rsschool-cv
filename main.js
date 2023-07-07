@@ -22,7 +22,7 @@ function overlayClose() {
 overlay.addEventListener('click', overlayClose)
 
 function navClose() {
-  items.forEach(function(item) {
+  items.forEach(item => {
     item.addEventListener('click', () => {
       nav.classList.remove('burger-menu-active')
       burger.classList.remove('burger-close-active')

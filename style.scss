@@ -62,11 +62,11 @@ a {
 }
 
 .layer {
-  position: absolute;
+  position: fixed;
   right: 0;
 
   width: 30vw;
-  height: 100%;
+  height: 100vh;
 
   background: #042F57;
 }
@@ -400,21 +400,27 @@ pre {
     background-color: #042F57;
 
     transition: 0.3s ease;
+
+    z-index: 4;
   }
   
   .burger-menu-active {
     transform: translateX(0);
-    z-index: 4;
   }
 
   .nav-list {
     display: block;
 
-    margin-top: 50px;
+    margin-top: 30px;
   }
   
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
   .nav-link {
     font-size: 20px;
+
     color: #F8F8F8;
   }
 
