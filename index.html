@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/icons8-резюме-gradient-32.png">
+  <title>CV</title>
 </head>
+
 <body>
-  <img src="../photo_Suficks.jpg" alt="" class="photo">
+  <div class="layer"></div>
+  <header class="header">
+    <div class="wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code Examples</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+
+      <div class="burger">
+        <span class="line line-first"></span>
+        <span class="line line-second"></span>
+        <span class="line line-third"></span>
+      </div>
+
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <main class="main-container">
+    <div class="left-container">
+      <section class="profile">
+        <div class="content">
+          <img src="./assets/photo_Suficks-round.png" alt="Photo" class="photo-pic">
+          <div class="info">
+            <h1 class="profile-title">Sofia Vdovichenko</h1>
+            <p class="profile-subtitle">Junior frontend developer</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <h2 class="title">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="item"><img class="contacts-pic" src="./assets/icons-адрес.png" alt="location" width="30" height="30"><span class="bold">Location: </span>Saint-Petersburg</li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-телефон.png" alt="phone" width="25" height="25"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83"
+              class="contacts-link">8-999-527-69-83</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-почта.png" alt="mail" width="25" height="25"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru"
+              class="contacts-link">vdo-sofia@mail.ru</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-github.png" alt="github" width="25" height="25"><span class="bold">Github: </span><a href="https://github.com/Suficks"
+              class="contacts-link">Sofia Vdovichenko</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-discord.png" alt="discord" width="25" height="25"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ "
+              class="contacts-link">Suficks#3918</a></li>
+        </ul>
+      </section>
+
+      <section class="summary" id="summary">
+        <h2 class="title">About Me</h2>
+        <p class="info">I am 23 years old and I decided to change my profession to one that is really interesting to me.
+          I study front-end development diligently and carefully in order to become a real specialist in the future. I
+          have already laid out a couple of sites and this is just the beginning!</p>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2 class="title">Skills</h2>
+        <ul class="skills-list">
+          <li class="item">HTML</li>
+          <li class="item">CSS/SASS</li>
+          <li class="item">JavaScript (Basics)</li>
+          <li class="item">Git/GitHub</li>
+          <li class="item">VS Code</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="right-container">
+      <section class="code" id="code">
+        <h2 class="title">Code Examples</h2>
+        <p class="subtitle"><span class="bold">Maximum Triplet Sum KATA from CODEWARS: </span>Given an array/list [] of
+          n integers, find maximum triplet sum in the array Without duplications.</p>
+        <div class="code-example">
+          <pre>
+            <code class="code-view">
+function maxTriSum(numbers){
+  let numSort = Array
+      .from(new Set(numbers))
+              
+      return numSort
+        .sort((a,b) => b - a)
+        .slice(0, 3)
+        .reduce((sum, acc) 
+          => sum + acc)
+}</code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <h2 class="title">Experience</h2>
+        <p class="info">This is my first site where I used HTML, SASS, Slick slider library and some JavaScript:</p>
+        <div class="experience-content">
+          <img class="experience-logo" src="./assets/experience-logo.png" alt="logo" width="30" height="30">
+          <a class="experience-link" href="https://lawyeranisimova.netlify.app/">Lawyer Anisimova</a>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <h2 class="title">Education</h2>
+        <ul class="education-list">
+          <li class="item"><span class="bold">University: </span>St. Petersburg Chemical and Pharmaceutical University,
+            Biotechnology</li>
+          <li class="item">JavaScript Manual on <a href="https://learn.javascript.ru/" class="link">learnjavascript.ru
+            </a>(in progress) </li>
+          <li class="item">RS Schools Course <a href="https://rs.school/js-stage0/" class="link">«JavaScript/Front-end.
+              Stage 0» </a>(in progress)</li>
+          <li class="item">«Basics of working with Git» from <a
+              href="https://practicum.yandex.ru/git-basics/?from=catalog" class="link">Yandex.Practice</a></li>
+          <li class="item">«HTML ans CSS» courses from <a href="https://code-basics.com/ru" class="link">Code-basics</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="languages" id="languages">
+        <h2 class="title">Languages</h2>
+        <div class="lang-list">
+          <p class="lang"><span class="bold">Russian</span></p>
+          <p class="lang-skill">native speaker</p>
+          <p class="lang"><span class="bold">English</span></p>
+          <p class="lang-skill">intermediater (B1)</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-wrapper">
+        <div class="github">
+          <a class="link" href="https://github.com/Suficks"><img src="./assets/GitHub_Logo.svg" width="50" height="50"
+              alt="github-link"></a>
+        </div>
+        <p class="year"><span class="bold">2023 by Sofia Vdovichenko</span></p>
+        <div class="rs-school">
+          <a class="link" href="https://rs.school/js/"><img src="./assets/rs_school_js.svg" width="80" height="80"
+              alt="rs-school-link"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
 </body>
+
 </html>
