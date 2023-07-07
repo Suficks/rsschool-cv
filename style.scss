@@ -349,6 +349,9 @@ pre {
 }
 
 .year {
+  margin: 0;
+  text-align: center;
+
   color: #042F57;
 }
 
@@ -504,6 +507,13 @@ pre {
   }
 }
 
+@media (max-width: 550px) {
+  .footer-wrapper {
+    max-width: 280px;
+    padding-left: 5px;
+  }
+}
+
 @media (max-width: 324px) {
   body {
     font-size: 14px;
@@ -519,9 +529,5 @@ pre {
 
   .code-example {
     font-size: 12px;
-  }
- 
-  .footer-wrapper {
-    padding: 0;
   }
 }
