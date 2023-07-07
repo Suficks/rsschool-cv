@@ -180,6 +180,11 @@ a {
   margin: 0;
   list-style: none;
 }
+.contacts-list .item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
 .contacts-block {
   display: flex;

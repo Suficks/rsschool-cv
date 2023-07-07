@@ -51,30 +51,15 @@
       <section class="contacts" id="contacts">
         <h2 class="title">Contacts</h2>
         <ul class="contacts-list">
-          <div class="contacts-block">
-            <img class="contacts-pic" src="./assets/icons-адрес.png" alt="location" width="30" height="30">
-            <li class="item"><span class="bold">Location: </span>Saint-Petersburg</li>
-          </div>
-          <div class="contacts-block">
-            <img class="contacts-pic" src="./assets/icons-телефон.png" alt="phone" width="25" height="25">
-            <li class="item"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83"
-                class="contacts-link">8-999-527-69-83</a></li>
-          </div>
-          <div class="contacts-block">
-            <img class="contacts-pic" src="./assets/icons-почта.png" alt="mail" width="25" height="25">
-            <li class="item"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru"
-                class="contacts-link">vdo-sofia@mail.ru</a></li>
-          </div>
-          <div class="contacts-block">
-            <img class="contacts-pic" src="./assets/icons-github.png" alt="github" width="25" height="25">
-            <li class="item"><span class="bold">Github: </span><a href="https://github.com/Suficks"
-                class="contacts-link">Sofia Vdovichenko</a></li>
-          </div>
-          <div class="contacts-block">
-            <img class="contacts-pic" src="./assets/icons-discord.png" alt="discord" width="25" height="25">
-            <li class="item"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ "
-                class="contacts-link">Suficks#3918</a></li>
-          </div>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-адрес.png" alt="location" width="30" height="30"><span class="bold">Location: </span>Saint-Petersburg</li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-телефон.png" alt="phone" width="25" height="25"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83"
+              class="contacts-link">8-999-527-69-83</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-почта.png" alt="mail" width="25" height="25"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru"
+              class="contacts-link">vdo-sofia@mail.ru</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-github.png" alt="github" width="25" height="25"><span class="bold">Github: </span><a href="https://github.com/Suficks"
+              class="contacts-link">Sofia Vdovichenko</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-discord.png" alt="discord" width="25" height="25"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ "
+              class="contacts-link">Suficks#3918</a></li>
         </ul>
       </section>
 
@@ -103,17 +88,19 @@
         <p class="subtitle"><span class="bold">Maximum Triplet Sum KATA from CODEWARS: </span>Given an array/list [] of
           n integers, find maximum triplet sum in the array Without duplications.</p>
         <div class="code-example">
-          <code class="code-view"><pre>
+          <pre>
+            <code class="code-view">
 function maxTriSum(numbers){
   let numSort = Array
-    .from(new Set(numbers))
-
-  return numSort
-          .sort((a,b) => b - a)
-          .slice(0, 3)
-          .reduce((sum, acc) 
-  => sum + acc)
-}</pre></code>
+      .from(new Set(numbers))
+              
+      return numSort
+        .sort((a,b) => b - a)
+        .slice(0, 3)
+        .reduce((sum, acc) 
+          => sum + acc)
+}</code>
+          </pre>
         </div>
       </section>
 
