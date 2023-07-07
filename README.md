@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Suficks.github.io/rsschool-cv/
