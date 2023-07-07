@@ -178,6 +178,7 @@ a {
 
 .contacts-list {
   margin: 0;
+  padding-left: 20px;
   list-style: none;
 }
 .contacts-list .item {
@@ -310,6 +311,7 @@ pre {
 .year {
   margin: 0;
   text-align: center;
+  font-weight: 700;
   color: #042F57;
 }
 
@@ -392,6 +394,9 @@ pre {
   }
 }
 @media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
   .layer {
     width: 45px;
   }
@@ -423,6 +428,14 @@ pre {
     padding: 5px;
     font-size: 14px;
   }
+  .footer-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-logo-rs {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media (max-width: 550px) {
   .footer-wrapper {
@@ -431,9 +444,6 @@ pre {
   }
 }
 @media (max-width: 324px) {
-  body {
-    font-size: 14px;
-  }
   .burger {
     margin: 10px 3.5px;
   }
