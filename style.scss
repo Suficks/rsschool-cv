@@ -35,7 +35,7 @@ a {
 
 .title {
   position: relative;
-  margin: 0  0 20px; 
+  margin: 0 0 20px;
 
   font-size: 18px;
   font-weight: 600;
@@ -113,7 +113,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  
+
   margin: 15px;
 
   width: 40px;
@@ -221,7 +221,6 @@ a {
   align-items: center;
 
   margin-bottom: 10px;
-
 }
 
 .contacts-pic {
@@ -246,7 +245,6 @@ a {
     margin: 0 20px 0 0;
   }
 }
-
 
 .skills {
   margin-bottom: 55px;
@@ -397,13 +395,13 @@ pre {
 
   .nav {
     position: fixed;
-    
+
     top: 0;
     right: 0;
-    
+
     width: 200px;
     height: 100%;
-    
+
     transform: translateX(100%);
 
     background-color: #042F57;
@@ -412,7 +410,7 @@ pre {
 
     z-index: 4;
   }
-  
+
   .burger-menu-active {
     transform: translateX(0);
   }
@@ -422,7 +420,7 @@ pre {
 
     margin-top: 30px;
   }
-  
+
   .nav-item {
     margin-bottom: 10px;
   }
@@ -500,13 +498,13 @@ pre {
   .right-container {
     max-width: 100%;
   }
-  
+
   .photo-pic {
     max-width: 250px;
   }
 
   .code-example {
-    padding: 5px; 
+    padding: 5px;
     font-size: 14px;
   }
 
