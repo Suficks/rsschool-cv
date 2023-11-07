@@ -51,14 +51,20 @@
       <section class="contacts" id="contacts">
         <h2 class="title">Contacts</h2>
         <ul class="contacts-list">
-          <li class="item"><img class="contacts-pic" src="./assets/icons-адрес.png" alt="location" width="30" height="30"><span class="bold">Location: </span>Saint-Petersburg</li>
-          <li class="item"><img class="contacts-pic" src="./assets/icons-телефон.png" alt="phone" width="25" height="25"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83"
-              class="contacts-link">8-999-527-69-83</a></li>
-          <li class="item"><img class="contacts-pic" src="./assets/icons-почта.png" alt="mail" width="25" height="25"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru"
-              class="contacts-link">vdo-sofia@mail.ru</a></li>
-          <li class="item"><img class="contacts-pic" src="./assets/icons-github.png" alt="github" width="25" height="25"><span class="bold">Github: </span><a href="https://github.com/Suficks"
+          <li class="item"><img class="contacts-pic" src="./assets/icons-адрес.png" alt="location" width="30"
+              height="30"><span class="bold">Location: </span>Saint-Petersburg</li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-телефон.png" alt="phone" width="25"
+              height="25"><span class="bold">Phone: </span><a href="tel:8-999-527-69-83"
+              class="contacts-link">8<span>&#8209;</span>999<span>&#8209;</span>527<span>&#8209;</span>69<span>&#8209;</span>83</a>
+          </li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-почта.png" alt="mail" width="25"
+              height="25"><span class="bold">E-mail: </span><a href="mailto:vdo-sofia@mail.ru"
+              class="contacts-link">vdo<span class="dash">&#8209;</span>sofia@mail.ru</a></li>
+          <li class="item"><img class="contacts-pic" src="./assets/icons-github.png" alt="github" width="25"
+              height="25"><span class="bold">Github: </span><a href="https://github.com/Suficks"
               class="contacts-link">Sofia Vdovichenko</a></li>
-          <li class="item"><img class="contacts-pic" src="./assets/icons-discord.png" alt="discord" width="25" height="25"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ "
+          <li class="item"><img class="contacts-pic" src="./assets/icons-discord.png" alt="discord" width="25"
+              height="25"><span class="bold">Discord: </span><a href="https://discordapp.com/users/Suficks#3918/ "
               class="contacts-link">Suficks#3918</a></li>
         </ul>
       </section>
@@ -95,10 +101,10 @@
       .from(new Set(numbers))
               
       return numSort
-        .sort((a,b) => b - a)
+        .sort((a,b) =<span>&gt;</span> b - a)
         .slice(0, 3)
         .reduce((sum, acc) 
-          => sum + acc)
+          =<span>&gt;</span> sum + acc)
 }</code>
           </pre>
         </div>
@@ -144,11 +150,11 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="footer-wrapper">
-        <a class="link" href="https://github.com/Suficks"><img class="footer-logo" src="./assets/GitHub_Logo.svg" width="50" height="50"
-              alt="github-link"></a>
+        <a class="link" href="https://github.com/Suficks"><img class="footer-logo" src="./assets/GitHub_Logo.svg"
+            width="50" height="50" alt="github-link"></a>
         <p class="year">2023 by Sofia Vdovichenko</p>
-        <a class="link" href="https://rs.school/js/"><img class="footer-logo-rs" src="./assets/rs_school_js.svg" width="80" height="80"
-              alt="rs-school-link"></a>
+        <a class="link" href="https://rs.school/js/"><img class="footer-logo-rs" src="./assets/rs_school_js.svg"
+            width="80" height="80" alt="rs-school-link"></a>
       </div>
     </div>
   </footer>
